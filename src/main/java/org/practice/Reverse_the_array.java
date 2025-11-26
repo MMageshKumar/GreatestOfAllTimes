@@ -5,22 +5,18 @@ import java.util.Arrays;
 public class Reverse_the_array {
     public static void main(String[] args) {
 
-        int[] a = {1, 4, 6, 7, 2};
-        int temp=0;
+        String str1= "Magesh";
+        String str2= "Kumar";
 
-        for (int i = 0; i <= a.length - 1; i++) {
-            for (int j = 0; j <= a.length - 1; j++) {
-                if(a[i]<a[j]){
-                temp = a[i];
-                a[i]=a[j];
-                a[j]=temp;
-                };
-            }
-        }
+        str1 = str1 + str2;
 
-        for(int x:a){
-            System.out.println(x);
-        }
+        System.out.println(str1);
+
+        str2 = str1.substring(0,str1.length()-str2.length());
+        System.out.println(str2);
+
+        str1 = str1.substring(str2.length());
+        System.out.println(str1);
     }
 
 }
