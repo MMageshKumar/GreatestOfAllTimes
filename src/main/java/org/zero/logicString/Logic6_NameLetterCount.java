@@ -14,12 +14,16 @@ public class Logic6_NameLetterCount {
         for (char x: str.toCharArray()){
             if (x == ' ') continue;
             str_map.put(x, str_map.getOrDefault(x,0)+1); // scope getOrDefault method
-        }
+        };
 
         StringBuilder str_print = new StringBuilder();
 
         for (Map.Entry<Character, Integer> x: str_map.entrySet()){
-         str_print.append(x.getKey()).append('-').append(x.getValue()).append(", ");
+         str_print
+                 .append(x.getKey())
+                 .append('-')
+                 .append(x.getValue())
+                 .append(", ");
         }
 
         // removing last indexes for remove comma
