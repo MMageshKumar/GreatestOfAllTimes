@@ -1,22 +1,27 @@
 package org.practice;
 
 import java.util.Arrays;
+import java.util.*;
 
 public class Reverse_the_array {
     public static void main(String[] args) {
 
-        String str1= "Magesh";
-        String str2= "Kumar";
+        String str1 = "Mageshkumar";
 
-        str1 = str1 + str2;
+        Map<Character, Integer> map = new LinkedHashMap<>();
 
-        System.out.println(str1);
+        for (char x : str1.toCharArray()) {
+            map.put(x, map.getOrDefault(x, 0) + 1);
+        };
 
-        str2 = str1.substring(0,str1.length()-str2.length());
-        System.out.println(str2);
 
-        str1 = str1.substring(str2.length());
-        System.out.println(str1);
+        StringBuilder str_Build=new StringBuilder();
+        for (Map.Entry<Character, Integer> y : map.entrySet()) {
+
+           str_Build.append(y.getKey()+"-"+y.getValue()+", ");
+        };
+        str_Build.setLength(str_Build.length()-2);
+
+        System.out.println(str_Build);
     }
-
 }

@@ -18,7 +18,7 @@ public class ReverseTheNumber4 {
 		
 		while (a > 0) {
 		i = a % 10;
-		j = (j * 10) + i;           //---------> Finally understanded,
+		j = (j * 10) + i;           //---------> Finally understood,
 		a = a / 10;
 
 		System.out.println("Reverse number is=" + j);
