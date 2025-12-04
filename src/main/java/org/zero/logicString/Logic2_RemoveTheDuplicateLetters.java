@@ -1,8 +1,6 @@
 package org.zero.logicString;
 
-import java.io.PrintStream;
-
-public class Logic2 {
+public class Logic2_RemoveTheDuplicateLetters {
     public static void main(String[] args){
 
         String str= "missisppi";
