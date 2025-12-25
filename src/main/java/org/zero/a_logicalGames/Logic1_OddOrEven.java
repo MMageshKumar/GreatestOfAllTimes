@@ -36,6 +36,7 @@ public class Logic1_OddOrEven {
            //Reverse the Integer
 
         int c= 12345;
+//           Int to String
            String d= Integer.toString(c);
 
            String e= new String("");
@@ -44,7 +45,9 @@ public class Logic1_OddOrEven {
                e += (d.charAt(i));
            }
 
-           System.out.println(e);
+//           String to Int
+          int f =  Integer.parseInt(e);
+           System.out.println(f);
 
     }
 }
